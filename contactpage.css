@@ -56,7 +56,7 @@ border-spacing: 0;
 /*==========HEADER==========*/
   header {
     background-color: #6200EA;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
   }
   header img {
@@ -104,6 +104,7 @@ border-spacing: 0;
 /*==========CONTENT==========*/
   .content {
     width: 90vw;
+    height: 60rem;
     margin: auto;
     padding-top: 2rem;
   }
@@ -118,9 +119,10 @@ border-spacing: 0;
     width: 44vw;
     min-height: 40rem;
     background-color: white;
-    padding: 3rem 3rem 0;
+    padding: 3rem;
     border-radius: 10px;
     position: relative;
+    margin-bottom: 2rem;
   }
   h3, .block {
     color: #6200EA;
@@ -180,12 +182,14 @@ border-spacing: 0;
     border: none;
     margin-top: 1rem;
     border: 2px solid #6200EA;
-    margin-bottom: 3rem;
   }
   button:hover {
     background-color: white;
     color: #6200EA;
     transition: 0.1s ease-in-out;
+  }
+  button:focus {
+    outline: none;
   }
   i {
     background-color: #6200EA;
@@ -223,6 +227,26 @@ border-spacing: 0;
     width: calc(44vw - 6rem);
     border-radius: 10px;
   }
+/*==========FOOTER==========*/
+  footer {
+    display: table;
+    background-color: #211138;
+    color: #B2ACBA;
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+  }
+  footer p {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  footer a {
+    color: #6200EA;
+  }
 /*==========MEDIA QUERY==========*/
   @media screen and (min-width: 1488px) {
     .content {
@@ -255,5 +279,19 @@ border-spacing: 0;
     }
     nav {
       right: 0;
+    }
+  }
+  @media screen and (max-width: 1177px) {
+    .map, .contact {
+      height: 40rem;
+    }
+  }
+  @media screen and (max-width: 980px) {
+    footer {
+      position: absolute;
+      bottom: 0;
+    }
+    .content {
+      height: 50rem;
     }
   }
