@@ -1,0 +1,259 @@
+/*==========CSS RESET==========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/*==========OTHER==========*/
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F4F3F5;
+  }
+  a {
+    text-decoration: none;
+  }
+/*==========HEADER==========*/
+  header {
+    background-color: #6200EA;
+    width: 100vw;
+    height: 5rem;
+  }
+  header img {
+    height: 3.5rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 0.75rem;
+    margin-left: 5vw;
+  }
+  header h1 {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 1.75rem;
+    margin-left: 0.5rem;
+  }
+  nav {
+    position: absolute;
+    right: 5vw;
+    top: 2rem;
+  }
+  nav a {
+    color: #F4F3F5;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    padding: 1.8rem 0;
+    margin: 0 2vw;
+    opacity: 0.8;
+  }
+  .contact-a {
+    margin-right: 0;
+  }
+  nav a:hover {
+    color: white;
+    border-bottom: 3px solid white;
+    transition: 0.1s;
+    opacity: 1;
+  }
+/*==========CONTENT==========*/
+  .content {
+    width: 90vw;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .map {
+    float: left;
+  }
+  .contact {
+    float: right;
+  }
+  .map, .contact {
+    display: inline-block;
+    width: 44vw;
+    min-height: 40rem;
+    background-color: white;
+    padding: 3rem 3rem 0;
+    border-radius: 10px;
+    position: relative;
+  }
+  h3, .block {
+    color: #6200EA;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 0.1rem;
+    font-size: 12px;
+    margin-bottom: 0.8rem;
+  }
+  .contact p {
+    padding: 1.5rem 0;
+    font-size: 20px;
+    line-height: 1.6rem;
+    color: #211138;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #211138;
+  }
+  .map p {
+    padding-bottom: 2rem;
+    line-height: 1.3rem;
+    font-size: 14px;
+    color: #211138;
+  }
+  textarea, input {
+    border: none;
+    background-color: #F4F3F5;
+    padding: 1rem;
+    display: block;
+    color: black;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    width: calc(44vw - 6rem);
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    resize: none;
+  }
+  input:focus, textarea:focus {
+    border-bottom: 3px solid #6200EA;
+    outline: none;
+  }
+  button {
+    background-color: #6200EA;
+    color: white;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem calc(22vw - 5rem);
+    border-radius: 50px;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    border: none;
+    margin-top: 1rem;
+    border: 2px solid #6200EA;
+    margin-bottom: 3rem;
+  }
+  button:hover {
+    background-color: white;
+    color: #6200EA;
+    transition: 0.1s ease-in-out;
+  }
+  i {
+    background-color: #6200EA;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    padding: 0.75rem;
+    width: 3.05rem;
+    text-align: center;
+    display: inline-block;
+    margin-right: 0.7rem;
+    margin-top: 1rem;
+    border: 0.125rem solid #6200EA;
+  }
+  i:hover {
+    background-color: white;
+    color: #6200EA;
+    transition: 0.1s ease-in-out;
+  }
+  .message {
+    padding-bottom: 4rem;
+    resize: vertical;
+  }
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 280px;
+    width: 420px;
+    margin-bottom: 2rem;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 280px;
+    width: calc(44vw - 6rem);
+    border-radius: 10px;
+  }
+/*==========MEDIA QUERY==========*/
+  @media screen and (min-width: 1488px) {
+    .content {
+      width: calc(1360px + 2rem);
+    }
+    .map, .contact {
+      width: 680px;
+    }
+    button {
+      padding: 1rem calc(340px - 5rem);
+    }
+    textarea, input {
+      width: calc(680px - 6rem);
+    }
+    .message {
+      padding-bottom: 6rem;
+    }
+    .gmap_canvas {
+      width: calc(680px - 6rem);
+    }
+    .header-content {
+      width: calc(1360px + 2rem);
+      margin: auto;
+    }
+    header img {
+      margin-left: 0;
+    }
+    .header-content {
+      position: relative;
+    }
+    nav {
+      right: 0;
+    }
+  }
